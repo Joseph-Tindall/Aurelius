@@ -1,0 +1,8 @@
+{
+    "id": "theme-aurelius",
+    "name": "Aurelius",
+    "description": "Custom theme to replicate Unreal concepts",
+    "url": "https://github.com/Joseph-Tindall/Aurelius",
+    "baseTheme": "nodebb-theme-harmony",
+    "screenshot": "screenshot.png"
+}
