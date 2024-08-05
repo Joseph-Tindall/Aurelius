@@ -1,7 +1,7 @@
 {
-    "name": "theme-aurelius",
+    "name": "nodebb-theme-aurelius",
     "version": "0.1.0",
-    "description": "Custom theme to replicate Unreal concepts.",
+    "description": "Aurelius theme for NodeBB",
     "main": "lib/theme.js",
     "keywords": [],
     "license": "MIT",

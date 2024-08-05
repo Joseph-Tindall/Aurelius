@@ -1,7 +1,7 @@
 {
-    "id": "theme-aurelius",
+    "id": "nodebb-theme-aurelius",
     "name": "Aurelius",
-    "description": "Custom theme to replicate Unreal concepts",
+    "description": "Custom dark theme with blue accents. Uses a standard approach to forum design.",
     "url": "https://github.com/Joseph-Tindall/Aurelius",
     "baseTheme": "nodebb-theme-harmony",
     "screenshot": "screenshot.png"
