@@ -1,4 +1,4 @@
-<li component="topic/necro-post" class="necro-post text-muted timeline-event d-flex gap-2 pt-4">
+<li component="topic/necro-post" class="necro-post timeline-event d-flex gap-2 pt-4">
 	<div class="timeline-badge">
 		<i class="fa fa-clock small"></i>
 	</div>

@@ -11,7 +11,8 @@
 		{ "hook": "filter:middleware.renderHeader", "method": "filterMiddlewareRenderHeader" }
 	],
 	"scripts": [
-		"public/client.js"
+		"public/client.js",
+		"../nodebb-theme-harmony/public/harmony.js"
 	],
 	"templates": "templates",
 	"modules": {
@@ -20,6 +21,7 @@
 	},
 	"staticDirs": {
 		"inter": "node_modules/@fontsource/inter/files",
-		"poppins": "node_modules/@fontsource/poppins/files"
+		"poppins": "node_modules/@fontsource/poppins/files",
+		"static": "./static"
 	}
 }
