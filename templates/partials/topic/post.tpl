@@ -16,6 +16,11 @@
 
 		<a class="fw-bold text-nowrap" href="{{{ if ./user.userslug }}}{config.relative_path}/user/{./user.userslug}{{{ else }}}#{{{ end }}}" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.displayname}</a>
 		<a class="text-nowrap user-tag" href="{{{ if ./user.userslug }}}{config.relative_path}/user/{./user.userslug}{{{ else }}}#{{{ end }}}" data-username="{posts.user.username}" data-uid="{posts.user.uid}">@{posts.user.username}</a>
+		{{{ each posts.user.selectedGroups }}}
+		{{{ if posts.user.selectedGroups.slug }}}
+		<!-- IMPORT partials/groups/badge.tpl -->
+		{{{ end }}}
+		{{{ end }}}
 	</div>
 	<div class="post-container d-flex flex-grow-1 flex-column w-100" style="min-width:0;">
 		<div class="d-flex align-items-center gap-1 flex-wrap w-100 post-header mt-1" itemprop="author" itemscope itemtype="https://schema.org/Person">
@@ -28,12 +33,6 @@
 					<span component="user/status" class="position-absolute translate-middle-y border border-white border-2 rounded-circle status {posts.user.status}"><span class="visually-hidden">[[global:{posts.user.status}]]</span></span>
 				</a>
 			</div>
-
-			{{{ each posts.user.selectedGroups }}}
-			{{{ if posts.user.selectedGroups.slug }}}
-			<!-- IMPORT partials/groups/badge.tpl -->
-			{{{ end }}}
-			{{{ end }}}
 
 			{{{ if posts.user.banned }}}
 			<span class="badge bg-danger rounded-1">[[user:banned]]</span>
