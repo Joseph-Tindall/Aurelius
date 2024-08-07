@@ -108,15 +108,15 @@
 								{{{ end }}}
 							</div>
 							<div>
-								<span class="badge text-body border border-gray-300 stats text-xs">
+								<span class="badge text-body border stats text-xs">
 									<span title="{posts.user.postcount}" class="fw-bold">{humanReadableNumber(posts.user.postcount)}</span>
 									<span class="text-lowercase fw-normal">[[global:posts]]</span>
 								</span>
-								<span class="badge text-body border border-gray-300 stats text-xs">
+								<span class="badge text-body border stats text-xs">
 									<span title="{posts.user.reputation}" class="fw-bold">{humanReadableNumber(posts.user.reputation)}</span>
 									<span class="text-lowercase fw-normal">[[global:reputation]]</span>
 								</span>
-								<span class="badge text-body border border-gray-300 stats text-xs">
+								<span class="badge text-body border stats text-xs">
 									<span class="text-lowercase fw-normal">[[user:joined]]</span>
 									<span title="{posts.user.joindateISO}" class="timeago fw-bold"></span>
 								</span>
@@ -134,7 +134,7 @@
 								{{{ if posts.data.tid }}}
 								<div class="d-flex flex-column align-items-start gap-1">
 									<a href="{config.relative_path}/topic/{posts.data.tid}">{posts.topic.title}</a>
-									<span class="badge text-body border border-gray-300 stats text-xs">
+									<span class="badge text-body border stats text-xs">
 										<span class="text-lowercase fw-normal">[[global:lastpost]]</span>
 										<span title="{posts.topic.lastposttimeISO}" class="timeago fw-bold"></span>
 									</span>

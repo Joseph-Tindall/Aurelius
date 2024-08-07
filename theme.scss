@@ -122,15 +122,47 @@ $font-path: "./plugins/nodebb-theme-quickstart";
 	--bs-form-invalid-color: #dc3545;
 	--bs-form-invalid-border-color: #dc3545;
 	--btn-ghost-hover-color: #28282c;
-	--bs-dropdown-link-hover-bg: #505054;
 	--bs-bg-opacity: 0.8;
 
-    --au-post-background: #1b1b20;
+    --au-post-background: #ffffff0d;
 }
 
 a {
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.tooltip-inner {
+	color: #fff;
+}
+
+.scroller-thumb-icon {
+	background-color: #26bbff;
+}
+
+body.template-topic .topic .posts.timeline > [component="post"]:first-child::before,
+body.template-topic .topic .posts.timeline .timeline-event:first-child::before,
+body.template-topic .topic .posts.timeline > [component="post/placeholder"]:first-child::before,
+body.template-topic .topic .posts.timeline > [component="post"]:last-child::after,
+body.template-topic .topic .posts.timeline .timeline-event:last-child::after,
+body.template-topic .topic .posts.timeline > [component="post/placeholder"]:last-child::after,
+body.template-topic .topic .posts.timeline > [component="post"]:last-child.highlight::after,
+body.template-topic .topic .posts.timeline .timeline-event:last-child.highlight::after,
+body.template-topic .topic .posts.timeline > [component="post/placeholder"]:last-child.highlight::after {
+	background-color: transparent;
+}
+
+.topic .pagination-block .scroller-container {
+	 border-color: #303034;
+}
+
+.dropdown-menu .dropdown-item:hover {
+	background-color: #505054;
+}
+
+button.pagetop > i,
+button.pagebottom > i {
+	color: #303034;
 }
 
 .post-queue.posts-list .post-content a,
@@ -143,6 +175,7 @@ a {
 
 div.posts-container > ul.posts li[component="post"] {
     background-color: var(--au-post-background);
+	padding-right: 27px;
     border-radius: 16px;
     margin-bottom: 1.2em;
 }
@@ -154,6 +187,77 @@ div.posts-container > ul.posts > li[component="post"] p {
 body.template-topic .topic .posts.timeline > [component="post/placeholder"],
 body.template-topic .topic .posts.timeline > [component="post"] {
     border: 1px solid #27272b;
+}
+
+div.posts-container > ul.posts li[component="post"] .topic-actions-top {
+	padding-right: 10px;
+}
+
+.sticky-tools span {
+	color: var(--bs-body-color);
+}
+
+blockquote,
+.text-bg-light, blockquote {
+	background-color: #28282c!important;
+	border: 1px solid #303034;
+	padding: 16px 24px;
+	border-radius: 10px;
+}
+
+.hljs {
+  background:#000!important;
+  color:#d4d4d4!important
+}
+.hljs-comment {
+  color:#77b06b!important;
+}
+.hljs-punctuation,
+.hljs-tag {
+  color:#dfc79f!important;
+}
+.hljs-tag .hljs-attr,
+.hljs-tag .hljs-name {
+  color:#e5c2ff!important
+}
+.hljs-deletion,
+.hljs-number,
+.hljs-quote,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-string,
+.hljs-template-tag,
+.hljs-type {
+  color:#c09077!important;
+}
+.hljs-section,
+.hljs-title {
+  color:#569cd6!important;
+}
+.hljs-link,
+.hljs-operator,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable {
+  color:#b9d6ff!important
+}
+.hljs-literal {
+  color:#d16969!important
+}
+.hljs-addition,
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code {
+  color:#e5c2ff!important
+}
+.hljs-meta {
+  color:#77b06b!important
+}
+.hljs-meta .hljs-string {
+  color:#d16969!important
 }
 
 .topic-title {
@@ -191,6 +295,15 @@ body.template-topic .topic .posts.timeline > [component="post"] {
 .topic-avatar .user-tag {
 	color: var(--bs-gray-500);
 	font-size: 0.8em;
+}
+
+.topic-avatar .badge {
+	margin-top: 6px;
+	font-weight: 700;
+	line-height: 18px;
+	border: 1px solid black;
+	padding: .185rem .5rem;
+	border-radius: 16px;
 }
 
 body.template-topic .topic .posts.timeline .timeline-event,
@@ -234,6 +347,8 @@ body.template-topic .topic .posts-container {
 }
 
 main#panel {
+	margin-top: 0;
+	padding-top: 1rem;
 	background: url("./plugins/nodebb-theme-aurelius/static/header.png");
 	background-position: top;
 	background-repeat: no-repeat;

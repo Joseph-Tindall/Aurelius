@@ -5,7 +5,7 @@
 				<button class="pagetop btn-ghost-sm ff-secondary d-inline-flex border-0" style="padding: 4px;"><i class="fa fa-chevron-up"></i> <span class="timeago text-xs text-muted text-nowrap" title="{./timestampISO}"></span></button>
 				<div class="scroller-container position-relative">
 					<div class="scroller-thumb d-flex gap-2 text-nowrap position-relative" style="height: 40px;">
-						<div class="scroller-thumb-icon bg-primary rounded d-inline-block" style="width:9px; height: 40px;"></div>
+						<div class="scroller-thumb-icon rounded d-inline-block" style="width:9px; height: 40px;"></div>
 						<div>
 							<p class="small thumb-text d-none d-md-inline-block ff-secondary fw-semibold user-select-none mb-0"></p>
 							<p class="meta thumb-timestamp timeago text-xs text-muted ff-secondary fw-semibold mb-0 user-select-none"></p>
