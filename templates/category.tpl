@@ -14,11 +14,11 @@
 	</div>
 	{{{ end }}}
 	<div class="d-flex flex-wrap gap-2 {{{ if config.theme.centerHeaderElements }}}justify-content-center{{{ end }}}">
-		<span class="badge text-body border stats text-xs">
+		<span class="badge text-body stats text-xs">
 			<span title="{totalTopicCount}" class="fw-bold">{humanReadableNumber(totalTopicCount)}</span>
 			<span class="text-lowercase fw-normal">[[global:topics]]</span>
 		</span>
-		<span class="badge text-body border stats text-xs">
+		<span class="badge text-body stats text-xs">
 			<span title="{totalPostCount}" class="fw-bold">{humanReadableNumber(totalPostCount)}</span>
 			<span class="text-lowercase fw-normal">[[global:posts]]</span>
 		</span>

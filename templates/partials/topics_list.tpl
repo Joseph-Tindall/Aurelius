@@ -61,7 +61,7 @@
 					</span>
 
 					<div class="d-flex gap-1 d-block d-lg-none w-100">
-						<span class="badge text-body border stats text-xs text-muted">
+						<span class="badge text-body stats text-xs text-muted">
 							<i class="fa-regular fa-fw fa-message"></i>
 							<span component="topic/post-count" class="fw-normal">{humanReadableNumber(./postcount, 0)}</span>
 						</span>

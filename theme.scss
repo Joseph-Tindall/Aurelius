@@ -28,7 +28,7 @@ $font-path: "./plugins/nodebb-theme-quickstart";
 	--bs-gray-900: #cdcdd5;
 	--bs-primary: #d0d0d4;
 	--bs-secondary: #6c757d;
-	--bs-success: #198754;
+	--bs-success: #a9d34f;
 	--bs-info: #0dcaf0;
 	--bs-warning: #ffc107;
 	--bs-danger: #dc3545;
@@ -36,7 +36,7 @@ $font-path: "./plugins/nodebb-theme-quickstart";
 	--bs-dark: #212529;
 	--bs-primary-rgb: 208,208,212;
 	--bs-secondary-rgb: 108,117,125;
-	--bs-success-rgb: 25,135,84;
+	--bs-success-rgb: 169,211,79;
 	--bs-info-rgb: 13,202,240;
 	--bs-warning-rgb: 255,193,7;
 	--bs-danger-rgb: 220,53,69;
@@ -44,7 +44,7 @@ $font-path: "./plugins/nodebb-theme-quickstart";
 	--bs-dark-rgb: 33,37,41;
 	--bs-primary-text-emphasis: #052c65;
 	--bs-secondary-text-emphasis: #2b2f32;
-	--bs-success-text-emphasis: #0a3622;
+	--bs-success-text-emphasis: #240f14;
 	--bs-info-text-emphasis: #055160;
 	--bs-warning-text-emphasis: #664d03;
 	--bs-danger-text-emphasis: #58151c;
@@ -132,12 +132,22 @@ a {
 	cursor: pointer;
 }
 
+.text-bg-success {
+	color: #240f14!important;
+}
+
 .tooltip-inner {
 	color: #fff;
 }
 
 .scroller-thumb-icon {
 	background-color: #26bbff;
+}
+
+.tag,
+.tag-list .tag {
+	color: #8e8ea0;
+	background-color: transparent;
 }
 
 body.template-topic .topic .posts.timeline > [component="post"]:first-child::before,
@@ -344,6 +354,22 @@ div.sticky-tools > nav {
 body.template-topic .topic .posts-container {
 	max-width: 100%;
 	width: 100%;
+}
+
+.badge {
+	color: #8e8ea0;
+	line-height: 16px;
+	border-radius: 16px;
+}
+
+.posts [component="post"].isSolved {
+	background-color: #333c2f80!important;
+}
+
+.posts [component="post"].isSolved::before {
+	color: #2e342a!important;
+	background-color: #a9d34f!important;
+	border-top-left-radius: 4px!important;
 }
 
 main#panel {
