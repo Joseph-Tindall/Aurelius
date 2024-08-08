@@ -393,7 +393,10 @@ body.template-topic .topic .posts-container {
 
 main#panel {
 	margin-top: var(--au-header-height);
-	padding-top: 1rem;
+	padding-top: 2rem;
+}
+
+body > div.layout-container {
 	background: url("./plugins/nodebb-theme-aurelius/static/header.png");
 	background-position: top;
 	background-repeat: no-repeat;
@@ -404,6 +407,7 @@ main#panel {
 .skin-noskin .bottombar-nav
 {
 	position: sticky;
+	background-color: transparent!important;
 	top: var(--au-header-height);
 	margin-top: var(--au-header-height);
 	height: calc(100vh - var(--au-header-height))!important;
