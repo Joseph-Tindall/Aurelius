@@ -1,5 +1,5 @@
 <div class="pagination-block d-none d-lg-block flex-grow-1 mb-4">
-	<div class="d-flex justify-content-end sticky-top mt-4" style="top:6rem;z-index:1;">
+	<div class="d-flex justify-content-end sticky-top mt-4" style="top:140px;z-index:1;">
 		<div class="ps-1 ps-md-0 d-inline-block">
 			<div class="scroller-content d-flex gap-2 flex-column align-items-start">
 				<button class="pagetop btn-ghost-sm ff-secondary d-inline-flex border-0" style="padding: 4px;"><i class="fa fa-chevron-up"></i> <span class="timeago text-xs text-muted text-nowrap" title="{./timestampISO}"></span></button>

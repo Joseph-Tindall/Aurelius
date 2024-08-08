@@ -125,6 +125,7 @@ $font-path: "./plugins/nodebb-theme-quickstart";
 	--bs-bg-opacity: 0.8;
 
     --au-post-background: #ffffff0d;
+	--au-header-height: 72px;
 }
 
 a {
@@ -169,10 +170,11 @@ body.template-topic .topic .posts.timeline > [component="post/placeholder"]:last
 .top-navigation {
 	min-height: 72px;
 	position: fixed;
-	top: 0;
-	background-color: #18181c;
+	z-index: 10;
+	background-color: #121216;
 	display: flex;
 	width: 100%;
+	top: 0;
 }
 
 .dropdown-menu .dropdown-item:hover {
@@ -212,12 +214,26 @@ div.posts-container > ul.posts li[component="post"] .topic-actions-top {
 	padding-right: 10px;
 }
 
+.sticky-tools {
+	padding: 0;
+	top: var(--au-header-height);
+	backface-visibility: hidden;
+	backdrop-filter: blur(5px);
+}
+
 .sticky-tools span {
 	color: var(--bs-body-color);
 }
 
-blockquote,
-.text-bg-light, blockquote {
+.sticky-tools > nav {
+	border-radius: 16px;
+}
+
+.sticky-tools-container {
+	background-color: rgba(16, 16, 20, 0.8);
+}
+
+blockquote {
 	background-color: #28282c!important;
 	border: 1px solid #303034;
 	padding: 16px 24px;
@@ -288,8 +304,10 @@ blockquote,
 
 .topic-avatar {
 	width: 140px;
-	margin-bottom: 56px;
+	margin-bottom: 36px;
 	padding: 2px 1.25rem;
+	position: sticky;
+	top: calc(2 * var(--au-header-height) - 15px);
 	display: flex;
 	margin-left: 40px;
 	align-items: center;
@@ -348,14 +366,6 @@ body.template-topic .topic .posts.timeline > [component="post"] {
 	margin-left: 0;
 }
 
-div.sticky-tools {
-	backface-visibility: hidden;
-}
-
-div.sticky-tools > nav {
-	border-radius: 16px;
-}
-
 .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
 	max-width: 95%;
 }
@@ -382,10 +392,23 @@ body.template-topic .topic .posts-container {
 }
 
 main#panel {
-	margin-top: 0;
+	margin-top: var(--au-header-height);
 	padding-top: 1rem;
 	background: url("./plugins/nodebb-theme-aurelius/static/header.png");
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+.skin-noskin nav.sidebar,
+.skin-noskin .bottombar-nav
+{
+	position: sticky;
+	top: var(--au-header-height);
+	margin-top: var(--au-header-height);
+	height: calc(100vh - var(--au-header-height))!important;
+}
+
+[component="brand/anchor"] > img {
+	max-height: calc(var(--au-header-height) * 0.75);
 }

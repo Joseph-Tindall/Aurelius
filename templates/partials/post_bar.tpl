@@ -1,6 +1,6 @@
 <div class="{{{ if config.theme.stickyToolbar }}}sticky-tools{{{ end }}}">
 	<nav class="d-flex flex-nowrap my-2 p-0 border-0 rounded topic-main-buttons">
-		<div class="d-flex flex-row p-2 text-bg-light border rounded w-100 align-items-center">
+		<div class="d-flex flex-row p-2 sticky-tools-container w-100 align-items-center">
 			<div class="d-flex me-auto mb-0 gap-2 align-items-center flex-wrap">
 				{{{ if loggedIn }}}
 				<button component="topic/mark-unread" class="btn-ghost-sm ff-secondary d-flex gap-2 align-items-center">
